@@ -110,6 +110,23 @@ if(!uppercaseABC && !lowercaseABC && !specialSymbols && !numeric ){
   return null
 }
 
+if(uppercaseABC === true) {
+  characterOptions = characterOptions.concat (upperCasedCharacters)
+  }
+  if(lowercaseABC === true) {
+    characterOptions = characterOptions.concat (lowerCasedCharacters)
+      }
+  if(specialSymbols === true) {
+    characterOptions = characterOptions.concat (specialCharacters)
+    }
+      
+  if(numeric === true) {
+    characterOptions = characterOptions.concat (numericCharacters)
+    }
+  console.log(characterOptions)
+  return keyLength
+  }
+  
 
   
 // Function for getting a random element from an array
