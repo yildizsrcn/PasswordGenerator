@@ -88,20 +88,37 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+var characterOptions = []
+var notification = document.querySelector("#notification")
+
+
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+  var keyLength = parseInt(prompt("Password must be between 8 and 128 characters in length."));
+  if (keyLength < 8 || keyLength > 128 || Number.isNaN(keyLength)) {
+    alert("Your password does not meet the critia");
+    return null 
+  }
+    
+    var uppercaseABC = confirm("Do you want an uppercase letter?");
+    var lowercaseABC = confirm("Do you want a lowercase letter!");
+    var specialSymbols = confirm("Do you want a symbol!");
+    var numeric = confirm("Do you want a number!");
+    console.log(keyLength,uppercaseABC, lowercaseABC, specialSymbols, numeric);
+if(!uppercaseABC && !lowercaseABC && !specialSymbols && !numeric ){
+ alert ("Must select 1 option")
+  return null
 }
 
+
+  
 // Function for getting a random element from an array
-function getRandom(arr) {
+// function getRandom(arr) {
 
-}
+// }
 
 // Function to generate password with user input
-function generatePassword() {
 
-}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
