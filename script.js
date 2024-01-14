@@ -136,6 +136,18 @@ if(uppercaseABC === true) {
 
 // Function to generate password with user input
 
+function generatePassword(keyLength) {
+  console.log("keyLenght", keyLength)
+var options = getPasswordOptions()
+console.log(options)
+var finalPassword = []
+for (var i =0; i < options ; i++){
+var randomindex =Math.floor(Math.random()*characterOptions.length)
+finalPassword.push(characterOptions[randomindex])
+}
+return finalPassword.join("")
+}
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
