@@ -2,7 +2,7 @@
 
 This is my 2nd project with JS.
 
-Password generator application generates a random password with spesific criteria.
+Password generator application generates a random password with specific criteria.
 
 
 DEPLOYED: https://yildizsrcn.github.io/PasswordGenerator/
